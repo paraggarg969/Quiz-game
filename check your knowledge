@@ -1,0 +1,53 @@
+print("here is a menu to play a game of quize")
+print("welcome to the GAME")
+print("....................")
+choice=int(input("press 1 if you want to play quize.... : ")) 
+
+if (choice==1):
+    print("welcome to quize")
+    choice1=str(input('enter your name.... : '))
+    choice2=str(input("enter your class.... : "))
+    print("....................")
+    
+    print("quize started... \n it has no negative marks...")
+    print("....................")
+    sum = 0
+    print("please enter only small alphabet...")
+    print("------------------------------------------------")  
+    
+    print("question : 1")
+    answer=input("is the coding language python, named after a snake? \n give answer in yes or no : \n ")
+    if answer == "no":
+                  print("correct answer")
+                  sum = sum+4     
+    else:
+        print("incorrect answer")
+    print("------------------------------------------------") 
+    
+    answer=input("question 2: \n what does CPU stands for : ")
+    if answer == "central processing unit":
+        print('correct answer')
+        sum = sum +4
+    else:
+        print('incorrect answer')
+    print("------------------------------------------------")
+    
+    answer = input("question 3 : \n what does RAM stands for : ")    
+    if answer == "random access memory":
+        print("correct answer")
+        sum = sum +4
+    else:
+        print("incorrect answer")
+    print("------------------------------------------------")
+    
+    answer = input("question 4 : \n who is called the god of lightning in Avengers? : ")  
+    if answer == "thor":
+                 print("correct answer")
+                 sum = sum +4
+    else:
+        print("incorrect answer")
+    print("congrulation your score is : "+ str(sum))    
+    print("------------------------------------------------")
+else:
+    print("exist")
+    
